@@ -1,0 +1,1504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    background-color: #fff;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #FF8049;
+}
+#main{
+  color: #fff;
+  overflow: hidden;
+}
+#page-1{
+    background: linear-gradient(70deg, #304964, #5BA78A );
+    min-height: 184vh;
+    width: 100%;
+}
+#page-1 #nav{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 120px;
+    color: #fff;
+}
+#page-1 #nav #right{
+    display: flex;
+    align-items: center;
+}
+#page-1 #nav #right h5{
+    margin-right: 60px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    position: relative;
+    padding-bottom: 5px;
+}
+#page-1 #nav #right h5::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    transition: all ease 0.5s;
+
+}
+#page-1 #nav #right h5::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    transition: all ease 0.5s;
+
+}
+#page-1 #nav #right h5:hover::before{
+    width: 50%;
+}
+#page-1 #nav #right h5:hover::after{
+    width: 50%;
+}
+#page-1 #nav #right button{
+    position: relative;
+    padding: 20px 33px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    overflow: hidden;
+}
+#page-1 #nav #right button #bottom-1{
+    position: absolute;
+    background-color: rgb(187, 187, 187);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    transition: all ease 0.5s;
+}
+#page-1 #nav #right button #bottom-2{
+    position: absolute;
+    background-color: #fff;
+    color: #5DAB8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    bottom: -190%;
+    left: 0;
+    transition: all ease 0.6s;
+}
+#page-1 #nav #right button:hover #bottom-1{
+    bottom: 0;
+}
+#page-1 #nav #right button:hover #bottom-2{
+    bottom: 0;
+}
+#page-1 #content{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+}
+#page-1 #content #left{
+    width: 40%;
+    height: 100%;
+}
+#page-1 #content #left #left-top{
+    height: 50%;
+    width: 100%;
+    padding-left: 170px;
+}
+#page-1 #content #left #left-top h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #999;
+}
+#page-1 #content #left #left-top h1{
+    font-size: 90px;
+    font-weight: 600;
+}
+#page-1 #content #left #left-btm {
+    position: relative;
+    background-color: #FE7E47;
+    height: 80%;
+    width: 100%;
+    border-top-right-radius: 70px;
+    margin-top: 60px;
+} 
+ #content #left #left-btm #box{
+    position: absolute;
+    top: -50px;
+    left: 80px;
+    height: 90px;
+    width: 74%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #765659 , #B97154);
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+}
+#content #left #left-btm #box .h1 #fir{
+    position: absolute;
+    top: 35%;
+    transition: all ease 0.7s;
+}
+#content #left #left-btm #box .h1 #sec{
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+#content #left #left-btm #box:hover #fir{
+    opacity: 0;
+    top: 10%;
+}
+#content #left #left-btm #box:hover #sec{
+    opacity: 1;
+}
+#content #left #left-btm #box:hover #circle{
+    scale: 1.1;
+}
+#page-1 #content #left #left-btm #box img{
+    position: absolute;
+    top: 1px;
+    left: -6%;
+    opacity: 0.6;
+}
+#page-1 #content #left #left-btm #box h1{
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#page-1 #content #left #left-btm #box #circle{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 20px;
+}
+#page-1 #content #left #left-btm #box #circle i{
+    color: #FE7E47;
+    position: absolute;
+    font-weight: 900;
+    left: 4px;
+    top: 3px;
+}
+#page-1 #content #left #left-btm #box:hover #circle i{
+    scale: 1.1;
+}
+#page-1 #content #left #left-btm #big-box{
+    position: absolute;
+    top: 29%;
+    left: 18%;
+    height: 380px;
+    width: 1250px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+#page-1 #content #left #left-btm #big-box #top{
+    margin-top: 20px;
+    border-bottom: 1px solid #111;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#big-box #top #top-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 200;
+    width: 40%;
+    height: 100%;
+    color: #000;
+}
+#big-box #top #top-mid{
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    color: #888;
+}
+#big-box #top #top-right{
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+}
+#big-box #top #top-right h6{
+    padding-bottom: 20px;
+    color: #000;
+    font-weight: 400;
+}
+ #content #left #left-btm #big-box #btm{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+} 
+#content #left #left-btm #big-box #btm img{
+   filter: invert(80%);
+}
+#content #left #left-btm #big-box #btm img:nth-child(1){
+    filter: invert(0%);
+ }
+#content #left #left-btm #big-box #btm img:hover{
+    filter: invert(0%);
+}
+#page-1 #content #right{
+    width: 60%;
+    height: 100%;
+}
+#page-1 #content #right #card{
+    margin-top: 50px;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    margin-left: 60px;
+}
+#page-1 #content #right #orange-card img{
+    width: 350px;
+}
+#page-1 #content #right #dark-card img{
+    width: 350px;
+}
+#page-1 #content #right #orange-card{
+  /*  background-color: blueviolet;*/
+        position: absolute;
+        width: fit-content;
+        rotate: 30deg;
+        top: 20%;
+        left: 10%;
+        z-index: 99;
+        transform: skewY(10deg);
+}
+#page-1 #content #right #dark-card{
+  /*  background-color: blueviolet;*/
+    margin-left: -20px;
+    margin-top: -150px;
+    position: absolute;
+    width: fit-content;
+    rotate: -27deg;
+    top: 85%;
+    left: 30%;
+    z-index: 9;
+    transform: skewX(10deg);
+} 
+#page-1 #content #right #dark-card #blur{
+    width: 200px;
+    position: absolute;
+    right: 16%;
+    top: -20%;
+    rotate: 30deg;
+}
+#page-1 #content #right #orange-card:hover{
+    transform: skewY(10deg);
+}
+
+#page-2{
+    min-height: 170vh;
+    width: 100%;
+    background-color: #fff;
+}
+#page-2 #top{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 180px;
+}
+#page-2 #top #pt-1{
+    width: 35%;
+    height: 100%;
+}
+#top #pt-1 h6{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 140px;
+    padding-left: 150px;
+    color: #444;
+}
+#top #pt-1 #square{
+    position: relative;
+    width: 230px;
+    height: 125px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin-top: 170px;
+    margin-left: 180px;
+}
+#top #pt-1 #square #sq{
+    position: absolute;
+    background: linear-gradient(90deg, #304964 , #3c8164);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    bottom: -15%;
+    right: 15%;
+}
+#top #pt-1 #square #sq p{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#top #pt-1 #square #sq #arrow{
+    margin-left: 160px ;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top #pt-1 #square #sq #arrow i{
+    color: #5BA78A;
+    font-weight: 900;
+}
+#top #pt-1 #square #sq:hover{
+    background: linear-gradient(20deg , #3c8164, #304964);
+   bottom: 0%;
+    right: 0%;
+}
+#top #pt-2{
+    margin-left: 90px;
+    margin-right: 130px;
+}
+#top #pt-2 h1{
+    font-size: 43px;
+    color: #000;
+    margin-bottom: 50px;
+    padding-top: 120px;
+}
+#top #pt-2 p{
+    margin-top: 40px;
+    word-spacing: 2px;
+    color: #555;
+    line-height: 23px;
+}
+#page-2 #bottom{
+    margin-top: 80px;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#page-2 #bottom #element-1{
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    display: flex;
+}
+#bottom #element-1 #elem1{
+    height: 470px;
+    width: 410px;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    margin-left: 35%;
+    position: relative;
+}
+#element-1 #elem1 #bg-img img{
+    position: absolute;
+    object-fit: cover;
+    width: 110%;
+    left: -8%;
+    bottom: 0;
+    transition: all ease 0.6s;
+}
+#bottom #element-1 #elem1 .earning{
+    position: absolute;
+    left: -15%;
+    top: 15%;
+}
+#bottom #element-1 #elem1 #up-arrow{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 4%;
+    top: 4%;
+    overflow: hidden;
+}
+#element-1 #elem1 #up-arrow i{
+    font-size: 30px;
+    color: #000;
+}
+#element-1 #elem1 #up-arrow .first{
+    position: absolute;
+    top: 0%;
+    transition: all ease 0.6s;
+}
+#element-1 #elem1:hover #up-arrow .first{
+    opacity: 0;
+}
+#element-1 #elem1:hover #up-arrow .second{
+    right: 0;
+    bottom: 0;
+}
+#element-1 #elem1:hover #bg-img img{
+    scale: 0.9;
+}
+#element-1 #elem1 #up-arrow .second{
+    position: absolute;
+    bottom: -100%;
+    right: 100%;
+    transition: all ease 0.5s;
+}
+#bottom #element-1 #elem2{
+    position: relative;
+    height: 470px;
+    width: 410px;
+    border-radius: 30px;
+    margin-left: 3%;
+    background-color: rgb(5, 210, 29);
+}
+#element-1 #elem2 #bg-img img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: all ease 0.6s;
+}
+ #element-1 #elem2 #up-arrow{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 4%;
+    top: 4%;
+    overflow: hidden;
+}
+#element-1 #elem2 #up-arrow i{
+    font-size: 30px;
+    color: #fff;
+}
+#element-1 #elem2 #up-arrow .first{
+    position: absolute;
+    top: 0%;
+    transition: all ease 0.6s;
+}
+#element-1 #elem2 #up-arrow .second{
+    position: absolute;
+    bottom: -100%;
+    right: 100%;
+    transition: all ease 0.5s;
+}
+#element-1 #elem2:hover #up-arrow .first{
+    opacity: 0;
+}
+#element-1 #elem2:hover #up-arrow .second{
+    right: 0;
+    bottom: 0;
+}
+#element-1 #elem2 #curve-img{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    top: 23%;
+    left: 74%;
+    background-color: #FF8049;
+    overflow: hidden;
+}
+#element-1 #elem2 #curve-img img{
+    width: 90%;
+    top: 22%;
+    position: absolute;
+    object-fit: cover;
+}
+#page-2 #bottom #element-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+}
+#bottom #element-2 #elem3{
+    position: relative;
+    margin-top: 50px;
+    height: 470px;
+    width: 410px;
+    border-radius: 30px;
+    margin-left: 4%;
+    background-color:#F5F5F5;
+}
+#element-2 #elem3 #bg-img img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: all ease 0.6s;
+}
+ #element-2 #elem3 #up-arrow{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 4%;
+    top: 4%;
+    overflow: hidden;
+}
+#element-2 #elem3 #up-arrow i{
+    font-size: 30px;
+    color: #000;
+}
+#element-2 #elem3 #up-arrow .first{
+    position: absolute;
+    top: 0%;
+    transition: all ease 0.6s;
+}
+#element-2 #elem3 #up-arrow .second{
+    position: absolute;
+    bottom: -100%;
+    right: 100%;
+    transition: all ease 0.5s;
+}
+#element-2 #elem3:hover #up-arrow .first{
+    opacity: 0;
+}
+#element-2 #elem3:hover #up-arrow .second{
+    right: 0;
+    bottom: 0;
+}
+#bottom #element-2 #elem4{
+    background-color: #F5F5F5;
+    position: relative;
+    margin-top: 50px;
+    height: 470px;
+    width: 410px;
+    border-radius: 30px;
+    margin-right: 7%;
+}
+#element-2 #elem4 .cut{
+    width: 220px;
+    position: absolute;
+    top: -30%;
+    left: -34%;
+}
+#element-2 #elem4 .girl{
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+#element-2 #elem4 .expenses{
+    position: absolute;
+    top: 70%;
+    left: -25%;
+    z-index: 9;
+}
+#element-2 #elem4 #bg-img img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: all ease 0.6s;
+    filter: opacity(20%);
+}
+ #element-2 #elem4 #up-arrow{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 4%;
+    top: 4%;
+    overflow: hidden;
+}
+#element-2 #elem4 #up-arrow i{
+    font-size: 30px;
+    color: #000;
+}
+#element-2 #elem4 #up-arrow .first{
+    position: absolute;
+    top: 0%;
+    transition: all ease 0.6s;
+}
+#element-2 #elem4 #up-arrow .second{
+    position: absolute;
+    bottom: -100%;
+    right: 100%;
+    transition: all ease 0.5s;
+}
+#element-2 #elem4:hover .girl{
+    scale: 0.9;
+}
+#element-2 #elem4:hover #up-arrow .first{
+    opacity: 0;
+}
+#element-2 #elem4:hover #up-arrow .second{
+    right: 0;
+    bottom: 0;
+}
+
+#page-3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#part-left{
+    position: relative;
+    width: 35%;
+    height: 80%;
+    background-color: #FF8049;
+    margin-top: 150px;
+}
+#part-left .line{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    height: 270px;
+    width: 3px;
+    background-color: #FF986B;
+}
+#part-left .line .thumb{
+    position: absolute;
+    top: 0%;
+    height: 80px;
+    width: 3px;
+    background-color: #ddd8d6;
+}
+#part-left h1{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 40px;
+}
+#part-left p{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 17px;
+    right: 10%;
+    line-height: 25px;
+    font-weight: 500;
+}
+#part-left .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 67%;
+    left: 27%;
+}
+#part-left .contact img{
+    width: 150px;
+}
+#part-left .contact h6{
+    font-size: 15px;
+    margin-left: 30px;
+    letter-spacing: 1.5px;
+}
+#part-left .contact #up-arrow{
+    overflow: hidden;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: -15%;
+    top: 30%;
+}
+#part-left .contact #up-arrow i{
+    font-size: 22px;
+    color: #fff;
+}
+#part-left .contact #up-arrow .first{
+    position: absolute;
+    top: 0%;
+    transition: all ease 0.6s;
+}
+#part-left .contact #up-arrow .second{
+    position: absolute;
+    right: 100%;
+    transition: all ease 0.5s;
+}
+#part-left .contact:hover #up-arrow .first{
+    right: -100%;
+}
+#part-left .contact:hover #up-arrow .second{
+    right: 30%;
+}
+#part-left .num2{
+    opacity: 0;
+}
+#part-left .num3{
+    opacity: 0;
+}
+#part-right{
+    width: 65%;
+    height: 100%;
+    background-color: #115b5c ;
+    border-top-left-radius: 30px;
+    position: relative;
+}
+#part-right #image-people img{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 850px;
+    object-fit: cover;
+}
+#part-right #popup-img{
+    position: absolute;
+    right: 0;
+    width: 230px;
+    height: 230px;
+}
+#part-right #popup-img .bg-img{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    width: 110px;
+}
+#part-right #popup-img .credit{
+    background-color: #444;
+    position: absolute;
+    top: 47%;
+    left: 42%;
+}
+#part-right #popup-img .star{
+    position: absolute;
+    top: 22%;
+    left: 65%;
+}
+#part-right #popup-img .rupees{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    scale: 0;
+    transition: all ease 0.6s;
+}
+#part-right #popup-img .stars{
+    position: absolute;
+    top: 15%;
+    left: 62%;
+    scale: 0;
+    transition: all ease 0.6s;
+}
+#popup-img #card:hover .rupees{
+    top: 25%;
+    scale: 1;
+}
+#popup-img #star:hover .stars{
+    top: 3%;
+    scale: 1;
+}
+#part-right #image-people #woman{
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+}
+#part-right #image-people #men{
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+}
+#page-4{
+    min-height: 150vh;
+    width: 150%;
+    position: relative;
+}
+#page-4 #top{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+#page-4 #top #pt-1{
+    width: 25%;
+    height: 100%;
+}
+#page-4 #top #pt-1 h6{
+   color: #304761;
+}
+#page-4 #top #pt-1 h5{
+    color: #141731;
+    font-size: 46px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+#page-4 #top #pt-2{
+    width: 75%;
+    height: 100%;
+    display: flex;
+}
+#page-4 #top #pt-2 #right-1>p{
+    color: #445970;
+    margin-top: 130px;
+    margin-left: 50px;
+    line-height: 28px;
+    font-size: 17px;
+    font-weight: 400;
+}
+#page-4 #top #pt-2 #right-1{
+    width: 28%;
+    height: 100%;
+    margin-left: -30px;
+}
+#top #pt-2 #square{
+    position: relative;
+    width: 230px;
+    height: 125px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin-top: 90px;
+    margin-left: 90px;
+}
+#top #pt-2 #square #sq{
+    position: absolute;
+    background: linear-gradient(90deg, #304964 , #3c8164);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    bottom: -15%;
+    right: 15%;
+}
+#top #pt-2 #square #sq p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+#top #pt-2 #square #sq #arrow{
+    margin-left: 160px ;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top #pt-2 #square #sq #arrow i{
+    color: #5BA78A;
+    font-weight: 900;
+}
+#top #pt-2 #square #sq:hover{
+    background: linear-gradient(20deg , #3c8164, #304964);
+    bottom: 0%;
+    right: 0%;
+}
+#page-4 #top #pt-2 #right-2{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+}
+#top #pt-2 #right-2 #circle-man{
+    position: absolute;
+    top: 32%;
+    left: 62%;
+    height: 34px;
+    width: 34px;
+    background-color: #62B790;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#page-4 #top #pt-2 #right-2 .man{
+    position: absolute;
+    top: 12%;
+    width: 34px;
+}
+#page-4 #top #pt-2 #right-2 .mobile{
+    position: absolute;
+    margin-top: 120px;
+    width: 420px;
+    height: 440px;
+}
+#page-4 #btm{
+    border: 1px solid #EDEEF0;
+}
+#page-4 #btm img{
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes scroll {
+    0%{
+        transform:translateX(0) ;
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+#page-5{
+    min-height: 200vh;
+    width: 100%;
+    position: relative;
+}
+#page-5 #up{
+    position: relative;
+    display: flex;
+    height: 130vh;
+}
+#up #side1{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    margin-top: 60px;
+    margin-left: 180px;
+}
+#up #side1 h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a5f77;
+}
+#up #side1 .elem{
+    margin-bottom: 10%;
+}
+#up #side1 .elem .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+    width: 62px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    background-color: #FF8049;
+    transition: all ease 0.5s;
+}
+#up #side1 .elem h1{
+    font-size: 25px;
+    font-weight: 500;
+    color: #111;
+}
+#up #side1 .elem p{
+    font-size: 17px;
+    margin-top: 3%;
+    font-weight: 400;
+    color: #777;
+    line-height: 24px;
+}
+#up #side1 #elem1{
+    margin-top: 30%;
+}
+#side1 #elem1 #pen-img::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    top: 21.5%;
+    left: 3.3%;
+    background-color: #fff;
+    transition: all ease 0.5s;
+}
+#side1 #elem1 #pen-img:hover::before{
+    width: 3%;
+}
+#up #side1 #elem1 #pen-img .pen{
+    transition: all ease 0.7s;
+}
+#up #side1 #elem1 #pen-img:hover .pen{
+    rotate: -50deg;
+}
+#side1 #elem2 .credit{
+    position: absolute;
+}
+#side1 #elem2 .blur-credit{
+    position: absolute;
+    top: 41.2%;
+    scale: 0;
+    opacity: 0.7;
+    transition: all ease 0.7s;
+}
+#side1 #elem2 #credit-img:hover .blur-credit{
+    scale: 0.8;
+}
+#side1 #elem3 #bar-img i{
+    font-size: 30px;
+}
+#up #side2{
+    width: 65%;
+    height: 100%;
+}
+#up #side2 h2{
+    color: #000;
+    font-size: 41px;
+    font-weight: 600;
+    margin-top: 5%;
+}
+#up #side2 p{
+    font-size: 18px;
+    margin-top: 4%;
+    margin-right: 10%;
+    line-height: 26px;
+    color: #000;
+}
+#up #side2 #girl-img img{
+    width: 800px;
+    margin-top: 8%;
+    border-radius: 30px;
+}
+#up #side2 #girl-img #box{
+    position: absolute;
+    top: 79.3%;
+    right: 5%;
+    height: 170px;
+    width: 400px;
+    border-radius: 30px;
+    background-color: #9a0505;
+    color: #000;
+}
+#up #side2 #girl-img #box img{
+    position: absolute;
+    top: -65%;
+    left: 80%;
+    rotate: 15deg;
+    width: 80px;
+}
+#page-5 #down{
+    height: 140vh;
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://assets.website-files.com/62fa5980cd922182416f3647/62fbbc3f5991521a4db2bb95_bg-hero-02.svg");
+}
+#down #side-up{
+    width: 100%;
+    height: 50%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+#down #side-up #girl{
+    margin-left: 8%;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+#down #side-up #girl img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#down #side-up #girl #popup{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+#down #side-up #reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+#down #side-up #reviews h2{
+    margin-bottom: 14%;
+    margin-right: 40%;
+    font-size: 18px;
+    font-weight: 500;
+}
+#down #side-up #reviews h1{
+    margin-right: 10%;
+    font-size: 37px;
+    font-weight: 600;
+    margin-top: -10%;
+}
+
+#down #side-up #girlp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    margin-right: 6%;
+    border-radius: 30px;
+}
+#down #side-up #girlp p{
+    font-size: 18px;
+    line-height: 25px;
+}
+#down #side-up #girlp img{
+    position: absolute;
+    top: -6.5%;
+    right: 6%;
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+}
+#down #side-down{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#down #side-down #orange{
+    position: absolute;
+    top: 70.4%;
+    height: 310px;
+    width: 750px;
+    background-color: #FE7E47;
+    z-index: 9;
+}
+#down #side-down #card{
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    margin-left: 37%;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#down #side-down #card #boy-img {
+   margin-top: -10%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #FF8049;
+    overflow: hidden;
+}
+#down #side-down #card #boy-img img{
+    object-fit: cover;
+    width: 80px;
+    padding-top: 10px;
+}
+#down #side-down #card p{
+    margin-top: 13%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+    color: #000;
+}
+#down #side-down #card #bottm{
+    display: flex;
+    align-items: center;
+    margin-bottom: -25%;
+    margin-top: 5%;
+    margin-left: 50px;
+}
+#side-down #card #bottm p{
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 27px;
+    margin-left: 13px;
+    color: #233053;
+}
+#side-down #card .join-img{
+    position: absolute;
+    top: 40%;
+    right: 59.5%;
+}
+#side-down #card #bottm .line{
+    height: 30px;
+    width: 1px;
+    background-color: #989292;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+#side-down #card #bottm h1{
+    color: #233053;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+#down #side-down #send{
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    margin-right: 6%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#down #side-down #send h1{
+    color: #000;
+    font-size: 33px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+#down #side-down #send input{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    margin: 25px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #656565;
+}
+#down #side-down #send button{
+    position: relative;
+    padding: 18px 63px;
+    border-radius: 10px;
+    background-color: #141731;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+#down #side-down #send button #bottom-1{
+    position: absolute;
+    background-color: rgb(187, 187, 187);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    transition: all ease 0.5s;
+}
+#down #side-down #send #bottom-2{
+    position: absolute;
+    background-color: #FE7E47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    bottom: -190%;
+    left: 0;
+    transition: all ease 0.6s;
+}
+#down #side-down #send button:hover #bottom-1{
+    bottom: 0;
+}
+#down #side-down #send button:hover #bottom-2{
+    bottom: 0;
+}
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #fff;
+}
+footer #elem1{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #7f7f7f;
+}
+footer #elem1 img{
+    width: 60px;
+    margin-left: 7%;
+}
+footer #elem1 #side{
+    margin-right: 15%;
+    display: flex;
+}
+footer #elem1 #side .side1 h1{
+    color: #141731;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+footer #elem1 #side .side1 h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #141731;
+    transition: all ease 0.2s;
+
+}
+footer #elem1 #side .side1 h1::after{
+    content: "";
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #141731;
+    transition: all ease 0.2s;
+
+}
+footer #elem1 #side .side1 h1:hover::before{
+    width: 50%;
+}
+footer #elem1 #side .side1 h1:hover::after{
+    width: 50%;
+}
+footer #elem1 #side .side2 h1{
+    padding-left: 120px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #141731;
+}
+footer #elem1 #side .side2 input{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin-left: 120px;
+    padding-top: 23px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #808080;
+}
+footer #elem2{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color:#141731 ;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(185, 184, 184);
+}
+footer #elem2 h1{
+    margin-left: 70px;
+}
+footer #elem2 .social{
+    margin-right: 0%;
+}
+footer #elem2 .social p{
+    color: #314861;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+footer #elem2 .social .icons{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid #141731;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer #elem2 .social .icons i{
+    font-size: 22px;
+    color: #314861;
+}
+footer #elem2 .social-img{
+    display: flex;
+    align-items: center;
+}
+footer #elem2 #buttons{
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+footer #elem2 #buttons .btn1{
+    border: 1px solid rgb(202, 200, 200);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 15px;
+    position: relative;
+    border-radius: 10px;
+    background-color: transparent;
+    overflow: hidden;
+}
+footer #elem2 #buttons .btn1 #button-1{
+    position: absolute;
+    background-color: rgb(187, 187, 187);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    transition: all ease 0.5s;
+}
+footer #elem2 #buttons .btn1 #button-2{
+    position: absolute;
+    background-color: #7f9aba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    bottom: -190%;
+    left: 0;
+    transition: all ease 0.6s;
+}
+footer #elem2 #buttons .btn1:hover #button-1{
+    bottom: 0;
+}
+footer #elem2 #buttons .btn1:hover #button-2{
+    bottom: 0;
+}
+footer #elem3{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #141731;
+    border-bottom: 1px solid rgb(186, 185, 185);
+}
+footer #elem3 #left{
+    padding-left: 50px;
+    display: flex;
+    align-items:center ;
+}
+footer #elem3 #left p{
+    padding-left: 20px;
+}
+footer #elem3 #right{
+    padding-right: 50px;
+    display: flex;
+    align-items: center ;
+}
+footer #elem3 #right p{
+    padding-right: 20px;
+}
+footer #elem4{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c1c1c1;
+    background-color: #233053;
+}
+footer #elem4 p span{
+    color: #fff;
+    font-size: 18px;
+}
